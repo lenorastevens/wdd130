@@ -22,7 +22,6 @@ nav a:hover {
     color:#0f62e4;
 }
 .home-title {
-    background-color: #2b061e;
     color: #d7cdcc;
     margin-top: 10px;
     font-family: "Special Elite", Garamond;
@@ -33,15 +32,28 @@ nav a:hover {
 }
 #hero-msg h1 {
     text-align: center;
-    background-color: #2b061e;
     color: #f65c40;
     padding-top: 15px;
 }
 #hero-msg h4 {
     text-align: center;
-    background-color: #d7cdcc;
-    color: #2b061e;
+    color: #f65c40;
     padding-top: 10px;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
 }
 h1, h2, h3, h4 {
     font-family: "Special Elite", Garamond;
@@ -53,17 +65,34 @@ h2 {
 .button-box {
     text-align: center;
 }
+header {
+    background-color: rgba(215,205, 204, 0.6);
+    color:#2b061e;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
 main section {
     text-align: center;
     font-family: Roboto, Helvetica, sans-serif;
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 #background {
     height: 725px;
-    background-color:#d7cdcc;
+    background-color: #2b061e;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
-header {
-    background-color: #d7cdcc;
-    color:#2b061e
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 .book, .join {
     background-color: #2b061e;
@@ -83,6 +112,9 @@ header {
     background-color:#d7cdcc;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #f65c40;
 }
 .msg p {
     font-size: .8em;
@@ -92,7 +124,10 @@ footer {
     padding: 25px 50px;
     margin-top: 200px;
     background-color:#2b061e;
-    color: #f65c40
+    color: #f65c40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a {
     color: #d7cdcc;
@@ -125,10 +160,73 @@ footer .social img {
 }
 .card-img {
     border: 10px solid #2b061e;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #0f62e4;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
 main section img {
     box-sizing: border-box;
 }
 .mountains {
-    margin: 200px 0;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    width: 100%;
+    box-shadow: 5px 5px 10px #f65c40;
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
