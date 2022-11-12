@@ -74,14 +74,6 @@ nav a:hover {
     grid-row: 1/2;
     margin-top: 100px;
 }
-#raft-msg p {
-    color:#2b061e;
-    background: rgba(215,205, 204, 0.6);
-    padding: 10px;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: "Special Elite", Garamond;
-}
 #raft {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
