@@ -69,11 +69,6 @@ nav a:hover {
     color: #f65c40;
     padding-top: 15px;
 }
-#raft-msg h4 {
-    text-align: center;
-    color: #f65c40;
-    padding-top: 10px;
-}
 #raft-msg {
     grid-column: 2/3;
     grid-row: 1/2;
