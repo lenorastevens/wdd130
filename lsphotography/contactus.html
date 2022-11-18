@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Whitewater Rafting Vacations | Thrilling Rapids Rafting Company | Home</title>
+    <link rel="stylesheet" href="styles.css/styles.css">
+    <title>Lenora Stevens Photography | Let's Travel | Home</title>
 </head>
 <body>
 <div id="content">
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/TRRC_logo.jpg" alt="Thrilling Rapids Rafting Company Logo">
+            <img class="logo" src="Images/lsp_logo.jpg" alt="Lenora Stevens Photography Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="locations.html">Locations</a>
-            <a href="site-plan-rafting.html">Site Plan</a>
-            <a href="contactus.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Travel Blog</a>
         </nav>
     </header> 
     
-    <main >
+    <main>
         <div id="feedback"></div>
         <form action="/my-handling-form-page" method="post">
             <ul>
@@ -44,8 +43,8 @@
         </form>    
     </main>
     <footer>
-        <p>Thrilling Rapids Rafting Company &copy; 2022 - Lenora Stevens</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p>Lenora Stevens Photography &copy; 2022</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
@@ -60,22 +59,5 @@
         </div>
     </footer>
 </div>
-<script>
-    // get the feedback div element so we can do something with it.
-    const feedbackElement = document.getElementById('feedback');
-    // get the form so we can read what was entered in it.
-    const formElement = document.forms[0];
-    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-    formElement.addEventListener('submit', function(e) {
-        // stop the form from doing the default action.
-        e.preventDefault();
-        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-        // make the feedback element visible.
-        feedbackElement.style.display = "block";
-        // add a class to move everything down so our message doesn't cover it.
-        document.body.classList.toggle('moveDown');
-    });
-</script>
 </body>
 </html>
