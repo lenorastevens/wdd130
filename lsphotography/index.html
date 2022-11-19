@@ -71,7 +71,40 @@
             <div class="column">
               <img class="demo cursor" src="Images/background_photos/big_bend_valley.jpg" style="width:100%" onclick="currentSlide(6)" alt="Big Bend National Park">
             </div>
-          </div>        
+        </div>        
+        <script>
+          let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}  
+        </script>
+    
     </div>
     
     <main class="home-grid">
@@ -85,11 +118,11 @@
         </section>
         <div class="quote-card">
             <img class="card-img" src="Images/background_photos/cuyahoga_valley.jpg" alt="walking bridge in forrest">
-            <div class="into-text">
+            <div class="intro-text">
                 <div class="quote">I believe the best way to begin reconnecting humanity's heart, mind, and soul to nature is for us to share our individual stories." J. Drew Lanham</div>
             </div>
         </div>
-        <section class="routes-card">
+        <section class="blog-card">
             <h2>Travel Blog</h2>
             <img class="card-img" src="Images/jasper/rv_camping.jpg" alt="rv in a camp ground at sunset">            
             <div class="intro-text">
@@ -104,13 +137,13 @@
         <p><a href="contactus.html">Contact Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+                <img src="Images/facebook.png"fb icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
+                <img src="Images/twitter.png" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+                <img src="Images/instagram.png" alt="instagram icon">
             </a>
         </div>
     </footer>
