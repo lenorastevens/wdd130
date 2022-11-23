@@ -15,6 +15,7 @@ body {
 nav a {
     text-align: center;
     color:#a7a283;
+    text-shadow: 1px 1px #132a13;
     text-decoration: none;
     padding: 35px
 }
@@ -87,6 +88,7 @@ header {
     padding: 2px 16px;
     color: #a7a283;
     font-family: Risque;
+    text-shadow: 1px 1px #45050c;
 }
 .row:after {
     content: "";
@@ -141,6 +143,7 @@ main section {
     text-align: center;
     font-size: .8em;
     font-family: acme;
+    text-shadow: 1px 1px #45050c;
 }
 .card-img {
     opacity: 1;
@@ -161,6 +164,7 @@ main section {
     font-size: .8em;
     font-family: acme;
     justify-content: space-around;
+    text-shadow: 1px 1px #45050c;
 }
 .intro-text:hover {
     opacity: 1;
@@ -211,12 +215,14 @@ footer {
     margin-top: 10px;
     background-color:#45050c;
     color: #a7a283;
+    text-shadow: 1px 1px #132a13;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 footer a {
     color: #a7a283;
+    text-shadow: 1px 1px #132a13;
     text-decoration: none;
 }
 footer a:hover {
