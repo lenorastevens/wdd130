@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Risque&family=Special+Elite&display=swap');
+
+/* Header Styles for all pages */
+content {
+    max-width: 1600px;
+    margin: 0 auto;
+    color: #a7a283
+}
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfd3;
+}
+nav a {
+    text-align: center;
+    color:#a7a283;
+    text-decoration: none;
+    padding: 35px
+}
+nav a:hover {
+    background-color:#2c447b;
+    color:#dfdfd3;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    background-color: #45050c;
+    color:#a7a283;
+    display: grid;
+    grid-template-columns: 175px auto;
+    font-family: Risque;
+}
+#logo_link {
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 130px;
+    padding-top: 5px;
+}
+
+/* Home Page slideshow styles */
+.slideshow-container {
+    box-sizing: border-box;
+    position: relative;
+}
+.mySlides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #dfdfd3;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: #132a13;
+}
+.numbertext {
+    color: #45050c;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color:#132a13;
+    padding: 2px 16px;
+    color: #a7a283;
+    font-family: Risque;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 16.66%;
+}
+.demo {
+    opacity: 0.6;
+}
+.active, .demo:hover {
+    opacity: 1;
+}
+
+
+/* Home Page styles for quote and link boxes  */
+main section {
+    text-align: center;
+    font-family: Acme, Helvetica, sans-serif;
+}
+.home-grid {
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr;    
+    column-gap: 15px;
+    position: relative;
+}
+.gallery-card {
+    margin: 20px auto;
+    position: relative;
+    grid-column: 1/2;
+}
+.blog-card {
+    margin: 20px auto;
+    position: relative;
+    grid-column: 3/4;
+}
+.quote-card {
+    grid-column: 2/3;
+    position: relative;
+    margin: 20px auto;
+}
+.quote-text {
+    position: absolute;
+    top: 0;
+    color: #dfdfd3;
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    font-family: acme;
+}
+.card-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.intro-text {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    top: 0;
+    color: #dfdfd3;
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    font-family: acme;
+    justify-content: space-around;
+}
+.intro-text:hover {
+    opacity: 1;
+}
+
+  
+
+/* Gallery Page Styles  */
+.gallery-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+}
+.gallery-grid img {
+    border: 3px solid #132a13; 
+    border-radius: 4px;  
+    padding: 0px; /* Some padding */
+    width: 150px; /* Set a small width */
+}
+.gallery-grid  img:hover {
+    box-shadow: 0 0 5px 3px rgba(69, 5, 12, 0.5);
+}
+
+
+
+/* Travel Blog Page Styles  */
+#travel-msg h1, #travel-msg h4 {
+    text-align: center;
+    color: #132a13;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 30px;
+    row-gap: 30px
+}
+.blog-card-img {
+    grid-column: 1/2;
+}
+
+
+
+
+/* Footer styles for all pages  */
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    background-color:#45050c;
+    color: #a7a283;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: #a7a283;
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: #2c447b;
+    color: #dfdfd3;
+}
+footer p {
+    font-size: 1.2em;
+    font-family: Risque, Helvetica, sans-serif;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+
+
+/* Styles for Contact Us page  */
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 8px solid #132a13;
+    border-radius: 1em;
+    margin-top: 50px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 3px solid #999;
+}
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 3px solid #999;
+}
+.button {
+    padding-left: 100px; 
+}  
+button {
+    margin: 0 auto;
+}
+#feedback {
+    background-color: #d7cdcc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #travel-msg {
+        margin-top: 0;
+    }
+    #travel-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .gallery-card, .quote-card, .blog-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    .intro-text, .quote-text {
+        font-size: 15px;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
