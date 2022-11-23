@@ -118,19 +118,19 @@ main section {
     height: auto;
 }
 .gallery-card {
-    margin: 20px auto;
+    margin: 50px auto;
     position: relative;
     grid-column: 1/2;
 }
 .blog-card {
-    margin: 20px auto;
+    margin: 50px auto;
     position: relative;
     grid-column: 3/4;
 }
 .quote-card {
     grid-column: 2/3;
     position: relative;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .quote-text {
     position: absolute;
