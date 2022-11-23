@@ -115,6 +115,7 @@ main section {
     grid-template-columns: 1fr 1fr 1fr;    
     column-gap: 15px;
     position: relative;
+    height: auto;
 }
 .gallery-card {
     margin: 20px auto;
