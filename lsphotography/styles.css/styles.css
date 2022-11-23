@@ -119,19 +119,19 @@ main section {
     height: auto;
 }
 .gallery-card {
-    margin: 50px auto;
+    margin: 60px auto;
     position: relative;
     grid-column: 1/2;
 }
 .blog-card {
-    margin: 50px auto;
+    margin: 60px auto;
     position: relative;
     grid-column: 3/4;
 }
 .quote-card {
     grid-column: 2/3;
     position: relative;
-    margin: 50px auto;
+    margin: 60px auto;
 }
 .quote-text {
     position: absolute;
@@ -208,7 +208,7 @@ main section {
 /* Footer styles for all pages  */
 footer {
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 10px;
     background-color:#45050c;
     color: #a7a283;
     display: flex;
