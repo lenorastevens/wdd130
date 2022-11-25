@@ -141,7 +141,6 @@ main section {
     color: #dfdfd3;
     width: 100%;
     text-align: center;
-    font-size: .8em;
     font-family: acme;
     text-shadow: 1px 1px #45050c;
 }
@@ -161,7 +160,6 @@ main section {
     color: #dfdfd3;
     width: 100%;
     text-align: center;
-    font-size: .8em;
     font-family: acme;
     justify-content: space-around;
     text-shadow: 1px 1px #45050c;
@@ -177,7 +175,8 @@ main section {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 20px;
+    grid-template-rows: repeat(14, 1fr)
+    
 }
 .gallery-grid img {
     border: 3px solid #132a13; 
@@ -198,7 +197,8 @@ main section {
 }
 .blog-grid {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(14, 1fr);
     column-gap: 30px;
     row-gap: 30px
 }
