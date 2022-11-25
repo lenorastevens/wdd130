@@ -172,16 +172,12 @@ main section {
 
 /* Gallery Page Styles  */
 .gallery-grid {
-    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(14, 1fr)
-    
+    grid-template-rows: repeat(14, 1fr)    
 }
 .gallery-grid img {
     border: 3px solid #132a13; 
-    border-radius: 4px;  
-    padding: 0px; /* Some padding */
     width: 150px; /* Set a small width */
 }
 .gallery-grid  img:hover {
@@ -194,16 +190,33 @@ main section {
 #travel-msg h1, #travel-msg h4 {
     text-align: center;
     color: #132a13;
+    text-shadow: 1px 1px #45050c;
 }
 .blog-grid {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(14, 1fr);
     column-gap: 30px;
     row-gap: 30px
 }
-.blog-card-img {
+.blog-grid img {
     grid-column: 1/2;
+    border: 5px solid #132a13;
+    width: 100%;
+   
+}
+.blog-grid #blog-entry {
+    grid-column: 2/6;
+    border: 3px solid #132a13;
+    width: 100%;
+    text-align: center;
+    font-family: acme;
+    background-color: #132a13;
+    color: #a7a283;
+    text-shadow: 1px 1px #45050c;
+    padding: 0
+}
+.blog-grid h4 {
+    padding: 0;
 }
 
 
