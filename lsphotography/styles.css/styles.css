@@ -186,38 +186,74 @@ main section {
 
 
 
+
 /* Travel Blog Page Styles  */
-#travel-msg h1, #travel-msg h4 {
+#travel-msg h1, #travel-msg h2 {
     text-align: center;
     color: #132a13;
-    text-shadow: 1px 1px #45050c;
+    text-shadow: 1px 1px #45050c
 }
-.blog-grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    column-gap: 30px;
-    row-gap: 30px
+* {
+   box-sizing: border-box;
 }
-.blog-grid img {
-    grid-column: 1/2;
-    border: 5px solid #132a13;
-    width: 100%;
-   
+body {
+background-color: #a7a283;
+font-family: Acme;
 }
-.blog-grid #blog-entry {
-    grid-column: 2/6;
-    border: 3px solid #132a13;
-    width: 100%;
+
+/* Center website */
+.main {
+max-width: 1000px;
+margin: auto;
+}
+
+h1 {
+font-size: 50px;
+word-break: break-all;
+}
+
+.row {
+margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+float: left;
+width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #dfdfd3;
+    padding: 10px;
     text-align: center;
-    font-family: acme;
-    background-color: #132a13;
-    color: #a7a283;
-    text-shadow: 1px 1px #45050c;
-    padding: 0
+    border: 3px solid #132a13
 }
-.blog-grid h4 {
-    padding: 0;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {width: 50%;}
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {width: 100%;}
+}
+  
+
 
 
 
