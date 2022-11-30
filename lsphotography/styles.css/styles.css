@@ -196,11 +196,15 @@ main section {
 .gallery-row-hover-opacity-off:hover{
     opacity:1
 }
-.inspiration {
+.gallery-row .inspiration {
     font-family: acme;
     color: #132a13;
     background-color: #a7a283;
     border:3px solid #132a13;
+}
+.inspiration {
+    font-size: 1.7vw;
+    text-align: center;
 }
 
 #pic01 {
