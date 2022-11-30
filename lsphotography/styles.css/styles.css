@@ -363,7 +363,7 @@ main section {
 }
 /* Center website */
 .blog-main {
-    max-width: 1600px;
+    max-width: 3000px;
     margin: auto;
     font-family: Acme;
     font-size: 1.30vw ;
@@ -537,9 +537,19 @@ button {
 
 /* Blog Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
-    .blog-column {width: 50%;}
+    .blog-column {
+        width: 50%;
+    }
+    .blog-main {
+        font-size: 1.5vw;
+    }
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .blog-column {width: 100%;}
+    .blog-column {
+        width: 100%;
+    }
+    .blog-main {
+        font-size: 1.7vw;
+    }
 }
