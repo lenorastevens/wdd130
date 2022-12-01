@@ -313,6 +313,51 @@ main section {
     grid-column: 8/10;
     align-self: flex-end;
 }
+#pic25 {
+    grid-column: 1/3;
+}
+#pic26 {
+    grid-column: 3/4;
+    height: 100%;
+}
+#pic27 {
+    grid-column: 4/6;    
+}
+#pic28 {
+    grid-column: 6/7;
+    height: 100%;
+}
+#pic29 {
+    grid-column: 7/9;
+}
+#pic30 {
+    grid-column: 9/10;
+    height: 100%;
+}
+#pic31 {
+    grid-column: 1/2;
+    height: 100%;
+}
+#pic32 {
+    grid-column: 2/4;
+    align-self: flex-end;
+}
+#pic33 {
+    grid-column: 4/5;
+    text-align: center;
+}
+#pic34 {
+    grid-column: 5/7;
+    align-self: flex-end;
+}
+#pic35 {
+    grid-column: 7/8;
+    
+}
+#pic36 {
+    grid-column: 8/10;
+    align-self: flex-end;
+}
 
 .gallery-modal {
     z-index:3;
@@ -331,9 +376,9 @@ main section {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 800px;
     text-align: center;
-    color: #dfdfd3;
+    color: #a7a283;
     padding: 10px 0;
     height: 150px;
 }
@@ -532,11 +577,8 @@ button {
     footer {
         margin-top: 25px;
     }
-}
-
 
 /* Blog Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
     .blog-column {
         width: 50%;
     }
