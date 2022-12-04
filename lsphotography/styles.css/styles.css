@@ -330,6 +330,7 @@ main section {
     grid-column: 13/16;
 }
 
+
 .gallery-modal {
     z-index:3;
     /*display:none;*/
@@ -358,7 +359,7 @@ main section {
     position:relative;
     padding:0;
     outline:0;
-    width:800px
+    width: 900px
 }
 .gallery-animate-zoom {
     animation:animatezoom 0.6s
