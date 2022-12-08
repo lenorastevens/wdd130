@@ -381,17 +381,19 @@ main section {
     height:100%;
     overflow:auto;
     background-color:rgb(69, 5, 12);
-    background-color:rgba(69, 5, 12, 0.2)
+    background-color:rgba(69, 5, 12, 0.4)
 }
-.gallery-caption-container {
+#caption01 {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 800px;
+    font-size: 1.4vw;
     text-align: center;
     color: #a7a283;
-    padding: 10px 0;
-    height: 150px;
+    background-color: #132a13;
+    padding: 13px 0;
+    height: 60px;
 }
 .gallery-modal-content {
     margin:auto;
@@ -593,6 +595,9 @@ button {
     .gallery-modal-content {
         width: 650px;
     }
+    #caption01 {
+        font-size: 2.0vw;
+    }
     .inspiration {
         font-size: 2.0vw;
     }
@@ -711,6 +716,9 @@ button {
     }
     .gallery-modal-content {
         width: 350px;
+    }
+    #caption01 {
+        font-size: 2.5vw;
     }
     .inspiration {
         font-size: 4.1vw;

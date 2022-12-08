@@ -169,9 +169,7 @@
                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                 <div class="gallery-modal-content gallery-animate-zoom">
                 <img id="img01" style="width:100%">
-                <div class="gallery-caption-container">
-                    <p id="caption01"></p>
-                </div>
+                <div id="caption01"></div>
                 </div>
             </div>
                 
@@ -179,7 +177,7 @@
             function onClick(element) {
                 document.getElementById("img01").src = element.src;
                 document.getElementById("modal01").style.display = "block";
-                document.getElementById("caption01").alt = "";
+                document.getElementById("caption01").innerHTML = element.alt;
             }
             </script>    
             
