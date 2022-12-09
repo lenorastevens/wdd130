@@ -597,9 +597,11 @@ button {
     }
     #caption01 {
         font-size: 2.0vw;
+        height: 40px;
+        padding: 12px 0;
     }
     .inspiration {
-        font-size: 2.0vw;
+        font-size: 2.2vw;
     }
     .gallery-row {
         grid-template-columns: repeat(10, 1fr);
