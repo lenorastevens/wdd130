@@ -516,7 +516,7 @@ form li + li {
 label {
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align: left;
 }
 input, textarea {
   font: 1em sans-serif;
