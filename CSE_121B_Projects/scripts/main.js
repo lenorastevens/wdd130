@@ -1,6 +1,12 @@
 import { API_KEY } from "./config.js";
 import processParks from "./parks.js";
 
+const toggleMenu = () => {
+    document.querySelector('#menu').classList.toggle('open');
+}
+
+document.querySelector('#toggleMenu').addEventListener('click', toggleMenu);
+
 // set current year in footer
 let dateToday = new Date();
 document.querySelector('#year').textContent = dateToday.getFullYear();
