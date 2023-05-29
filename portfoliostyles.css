@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Risque&family=Special+Elite&display=swap');
+
+
+content {
+    max-width: 1600px;
+    margin: 0 auto;
+    color: #a7a283
+}
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+    background-color: rgb(105, 105, 134);
+}
+nav a {
+    text-align: center;
+    color:#c2abc6;
+    text-shadow: 1px 1px #091609;
+    text-decoration: none;
+    padding: 35px
+}
+nav a:hover {
+    background-color:#2c447b;
+    color:#dfdfd3;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 8, 8);
+    color: white;
+}
+header {
+    background-color: #45050c;
+    color:#a7a283;
+    display: grid;
+    grid-template-columns: 175px auto;
+    font-family: Risque;
+}
