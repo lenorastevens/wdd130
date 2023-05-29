@@ -37,3 +37,17 @@ header {
     grid-template-columns: 175px auto;
     font-family: Risque;
 }
+
+@media screen and (max-width: 900px) {
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+}
