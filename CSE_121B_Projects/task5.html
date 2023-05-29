@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 05 | Sample Solution</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="task2.html">Lesson 2</a></li>
+            <li><a href="task3.html">Lesson 3</a></li>
+            <li><a href="task4.html">Lesson 4</a></li>
+            <li><a href="task5.html" class="active">Lesson 5</a></li>
+            <li><a href="task6.html">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Controlling Your Code</h1>
+    </header>
+    <main id="main">
+        <section id="section">
+            <h2>
+                Today is <span id="message2"></span>.
+            </h2>
+            <h3>
+                <span id="message1"></span>
+            </h3>
+        </section>
+        <hr>
+        <section id="section">
+            <h2>Temples in Utah</h2>
+            <p>
+                Sort by: 
+                <select id="sortBy">
+                    <option value="templeNameAscending">Temple Name Ascending</option>
+                    <option value="templeNameDescending">Temple Name Descending</option>
+                    <option value="location">Location</option>
+                    <option value="dedicated">Dedicated</option>
+                </select>
+            </p>
+            <div id="temples">
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Lenora Stevens | Controlling Your Code | Lesson 5
+    </footer>
+    <script src="scripts/main2.js"></script>
+    <script src="scripts/task5.js"></script>
+</body>
+
+</html>

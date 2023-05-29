@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 06 | Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="task2.html">Lesson 2</a></li>
+            <li><a href="task3.html">Lesson 3</a></li>
+            <li><a href="task4.html">Lesson 4</a></li>
+            <li><a href="task5.html">Lesson 5</a></li>
+            <li><a href="task6.html" class="active">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>National Parks Project</h1>
+    </header>
+    <main id="main">
+        <section>
+            <h2>
+                Today is <span id="message"></span>!
+            </h2>
+        </section>
+        <hr>
+        <section id="section">
+            <h2>National Parks by State</h2>
+                <div>
+                    <label for="stateCode">First Choose a State:</label>
+                    <select name="stateCode" id="stateCode">
+                        <option value=""></option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AS">AS</option>
+                        <option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option>
+                        <option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="GU">GU</option><option value="HI">HI</option>
+                        <option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option>
+                        <option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option>
+                        <option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option>
+                        <option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option>
+                        <option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option>
+                        <option value="OR">OR</option><option value="PA">PA</option><option value="PR">PR</option><option value="RI">RI</option><option value="SC">SC</option>
+                        <option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option>
+                        <option value="VI">VI</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+
+                </div>
+            <p>
+                Sort by: 
+                <select id="sortBy">
+                    <option value="parkNameAscending">Park Name Ascending</option>
+                    <option value="parkNameDescending">Park Name Descending</option>
+                </select>
+            </p>
+            <div id="parks">
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Lenora Stevens | API Project | Week 6
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+    
+</body>
+
+</html>
